@@ -1,50 +1,49 @@
 public class Main {
     public static void main(String[] args) {
-        //Задание 1
-        System.out.println("Задание 1");
-        int age1 = 29;
-        if (age1 >= 18) {
+//Задание 2.1
+        System.out.println("Задание 2.1");
+        int age3 = 17;
+        if (age3 >= 18) {
             System.out.println("Поздравляю с совершеннолетием");
-        }
-        if (age1 < 18) {
+        } else {
             System.out.println("Возраст совершеннолетия еще не достигнут, нужно подождать");
-        }
-//Задание 2
-        System.out.println("Задание 2");
-        int age2 = 23;
-        if (age2 >= 7 && age2 <= 17) {
-            System.out.println("Пора идти в школу!");
-        }
-        if (age2 >= 18 && age2 <= 23) {
-            System.out.println("Пора в университет!");
-        }
-        if (age2 >= 24) {
-            System.out.println("Пора искать работу!");
-        }
-//Задание 3
-        System.out.println("Задание 3");
-        int totalSeats = 102;
-        int totalSitSeats = 60;
-        int totalUpSpace = totalSeats - totalSitSeats;
 
-        int sitSeats = 59;
-        int upSpace = 0;
-        if (sitSeats >= 61) {
+        }
+
+//Задание 2.2
+        System.out.println("Задание 2.2");
+        int age4 = 29;
+        if (age4 >= 7 && age4 <= 17) {
+            System.out.println("Пора идти в школу!");
+        } else {
+            if (age4 >= 18 && age4 <= 23) {
+                System.out.println("Пора в университет!");
+            } else {
+                System.out.println("Пора искать работу!");
+            }
+        }
+
+//Задание 2.3
+        System.out.println("Задание 2.3");
+        int totalSeats1 = 102;
+        int sitSeats1 = 60;
+        int upSpace1 = totalSeats1 - sitSeats1;
+
+        int sitSeats0 = 38;
+        int upSpace0 = 22;
+        if (sitSeats1 >= 61) {
             System.out.println("Сидячих мест нет");
+        } else {
+            System.out.println("Есть еще " + (sitSeats1 - sitSeats0) + " сидячих мест");
         }
-        if (sitSeats < 60) {
-            System.out.println("Есть еще " + (totalSitSeats - sitSeats) + " сидячих мест");
-        }
-        if (upSpace >= 43) {
+        if (upSpace0 >= 43) {
             System.out.println("Стоячих мест нет");
+        } else {
+            System.out.println("Есть еще " + (upSpace1 - upSpace0) + " сидячих мест");
         }
-        if (upSpace <= 42) {
-            System.out.println("Есть еще " + (totalUpSpace - upSpace) + " стоячих мест");
-        }
-        if (sitSeats + upSpace >= 103) {
+        if (sitSeats1 + upSpace1 >= 103) {
             System.out.println("Никаких мест нет");
-        }
-        if (sitSeats + upSpace <= 102) {
+        } else {
             System.out.println("Места есть!");
         }
     }
